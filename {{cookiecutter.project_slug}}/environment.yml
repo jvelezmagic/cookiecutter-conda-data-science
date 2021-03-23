@@ -4,29 +4,29 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - black
   - invoke
   - jupyter
   - jupyterlab
+  - keras
+  - lightgbm
   - matplotlib
+  - missingno
+  - nbdime
   - numpy
   - pandas
   - pandas-flavor
   - pandas-profiling
   - pip
-  - python={{ cookiecutter.python_version }}
+  - plotly
   - pyjanitor
+  - pylint
+  - pyspark
+  - python={{ cookiecutter.python_version }}
   - scikit-learn
   - seaborn
   - statsmodels
+  - tensorflow
   - pip:
-      - black
       - h2o
-      - keras
-      - lightgbm
-      - missingno
-      - nbdime
-      - plotly
-      - pylint
       - pyhere
-      - pyspark
-      - tensorflow
