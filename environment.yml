@@ -1,0 +1,8 @@
+# conda env create -f environment.yml
+name: cookiecutter-conda-data-science
+channels:
+- anaconda
+- conda-forge
+- defaults
+dependencies:
+- cookiecutter
