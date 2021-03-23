@@ -12,6 +12,7 @@ dependencies:
   - pandas
   - pandas-flavor
   - pandas-profiling
+  - pip
   - python={{ cookiecutter.python_version }}
   - pyjanitor
   - scikit-learn
