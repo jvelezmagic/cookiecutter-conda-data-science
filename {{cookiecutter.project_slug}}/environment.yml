@@ -1,0 +1,31 @@
+name: {{ cookiecutter.project_slug }}
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - invoke
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - pandas-flavor
+  - pandas-profiling
+  - python={{ cookiecutter.python_version }}
+  - pyjanitor
+  - scikit-learn
+  - seaborn
+  - statsmodels
+  - pip:
+      - black
+      - h2o
+      - keras
+      - lightgbm
+      - missingno
+      - nbdime
+      - plotly
+      - pylint
+      - pyhere
+      - pyspark
+      - tensorflow
