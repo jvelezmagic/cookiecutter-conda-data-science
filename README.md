@@ -63,7 +63,7 @@ cookiecutter https://github.com/jvelezmagic/cookiecutter-conda-data-science
         │   └── train_model.py
         │
         ├── utils          <- Scripts to help with common tasks.
-            └── paths.py
+            └── paths.py   <- Helper functions to relative file refecing across project.
         │
         └── visualization  <- Scripts to create exploratory and results oriented visualizations.
             └── visualize.py
