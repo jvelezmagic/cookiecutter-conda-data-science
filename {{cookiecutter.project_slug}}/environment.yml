@@ -23,6 +23,7 @@ dependencies:
   - pylint
   - pyspark
   - python={{ cookiecutter.python_version }}
+  - python-dotenv
   - scikit-learn
   - seaborn
   - statsmodels
