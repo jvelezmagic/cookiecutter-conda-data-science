@@ -1,10 +1,8 @@
 # Cookiecutter Conda Data Science
----
 
 _A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
 
 ## Requirements
----
 
 - [Anaconda](https://www.anaconda.com/download/) >=5.x
 - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
@@ -20,7 +18,6 @@ $ conda install -c conda-forge cookiecutter
 ```
 
 ## Create a new project
----
 
 In a folder where you want your project generated:
 
@@ -28,9 +25,7 @@ In a folder where you want your project generated:
 cookiecutter https://github.com/jvelezmagic/cookiecutter-conda-data-science
 ```
 
-## Resulting directory structure
----
-
+## Resulting dicrecory structure
 
     ├── tasks.py           <- Invoke with commands like `notebook`.
     ├── README.md          <- The top-level README for developers using this project.
@@ -80,12 +75,10 @@ cookiecutter https://github.com/jvelezmagic/cookiecutter-conda-data-science
             └── visualize.py
 
 ## Contributing guide
----
 
 All contributions, bug reports, bug fixes, documentation improvements, enhancements and ideas are welcome.
 
 ## Credits
----
 
 This project is heavily influenced by [drivendata's Cookiecutter Data Science](https://github.com/drivendata/cookiecutter-data-science) and [andfanilo's Cookiecutter for Kaggle Conda projects](https://github.com/andfanilo/cookiecutter-kaggle)
 
