@@ -48,9 +48,11 @@ cookiecutter https://github.com/jvelezmagic/cookiecutter-conda-data-science
     │
     ├── environment.yml    <- The requirements file for reproducing the analysis environment.
     │
-    ├── .here              <- File that will stop the search if none of the other criteria apply when searching head of project.
+    ├── .here              <- File that will stop the search if none of the other criteria
+    │                         apply when searching head of project.
     │
-    ├── setup.py           <- Makes project pip installable (pip install -e .) so {{ cookiecutter.project_module_name }} can be imported.
+    ├── setup.py           <- Makes project pip installable (pip install -e .)
+    │                         so {{ cookiecutter.project_module_name }} can be imported.
     │
     └── {{ cokiecutter-project_module_name }}               <- Source code for use in this project.
         ├── __init__.py    <- Makes {{ cookiecutter.project_module_name }} a Python module.
