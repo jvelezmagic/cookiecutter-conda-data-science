@@ -18,7 +18,7 @@ def readme() -> str:
     return open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
 setup(
-    name='{{ cookiecutter.project_slug }}',
+    name='{{ cookiecutter.project_module_name }}',
     version='{{ cookiecutter.project_version }}',
     author='{{ cookiecutter.project_author_name.replace("\'", "\\\'") }}',
     author_email='{{ cookiecutter.project_author_email }}',
