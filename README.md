@@ -25,7 +25,7 @@ In a folder where you want your project generated:
 cookiecutter https://github.com/jvelezmagic/cookiecutter-conda-data-science
 ```
 
-## Resulting dicrecory structure
+## Resulting directory structure
 
     ├── tasks.py           <- Invoke with commands like `notebook`.
     ├── README.md          <- The top-level README for developers using this project.
