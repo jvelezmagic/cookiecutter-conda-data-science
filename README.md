@@ -27,6 +27,7 @@ cookiecutter https://github.com/jvelezmagic/cookiecutter-conda-data-science
 
 ## Resulting directory structure
 
+    ├── LICENSE
     ├── tasks.py           <- Invoke with commands like `notebook`.
     ├── README.md          <- The top-level README for developers using this project.
     ├── install.md         <- Detailed instructions to set up this project.
