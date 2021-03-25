@@ -36,7 +36,7 @@ Please read [install.md](install.md) for details on how to set up this project.
     ├── setup.py           <- Makes project pip installable (pip install -e .)
     │                         so {{ cookiecutter.project_module_name }} can be imported.
     │
-    └── {{ cookiecutter-project_module_name }}               <- Source code for use in this project.
+    └── {{ cookiecutter.project_module_name }}               <- Source code for use in this project.
         ├── __init__.py    <- Makes {{ cookiecutter.project_module_name }} a Python module.
         │
         ├── data           <- Scripts to download or generate data.
