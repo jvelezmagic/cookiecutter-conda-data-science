@@ -5,7 +5,7 @@
     "project_author_name": "Your name (or your organization/company/team)",
     "project_author_email": "Yout email (or your organization/company/team)",
     "project_description": "A short description of the project.",
-    "project_open_source_license": ["MIT", "BSD-3-Clause", "No license file"],
+    "project_open_source_license": ["No license file", "MIT", "BSD-3-Clause"],
     "python_version": "3.*",
     "project_version": "0.1.0"
 }
