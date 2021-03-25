@@ -57,4 +57,4 @@ Please read [install.md](install.md) for details on how to set up this project.
             └── visualize.py
 
 ---
-Project based on the [cookiecutter conda data science project template](https://github.com/jvelezmagic/cookiecutter-conda-data-science)
+Project based on the [cookiecutter conda data science project template](https://github.com/jvelezmagic/cookiecutter-conda-data-science).

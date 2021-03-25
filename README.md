@@ -29,6 +29,7 @@ cookiecutter https://github.com/jvelezmagic/cookiecutter-conda-data-science
 
     ├── tasks.py           <- Invoke with commands like `notebook`.
     ├── README.md          <- The top-level README for developers using this project.
+    ├── install.md         <- Detailed instructions to set up this project.
     ├── data
     │   ├── external       <- Data from third party sources.
     │   ├── interim        <- Intermediate data that has been transformed.
@@ -54,7 +55,7 @@ cookiecutter https://github.com/jvelezmagic/cookiecutter-conda-data-science
     ├── setup.py           <- Makes project pip installable (pip install -e .)
     │                         so {{ cookiecutter.project_module_name }} can be imported.
     │
-    └── {{ cokiecutter-project_module_name }}               <- Source code for use in this project.
+    └── {{ cookiecutter.project_module_name }}               <- Source code for use in this project.
         ├── __init__.py    <- Makes {{ cookiecutter.project_module_name }} a Python module.
         │
         ├── data           <- Scripts to download or generate data.
