@@ -31,11 +31,7 @@ def make_dir_function(
 
     return dir_path
 
-def __generate_default_subdirs() -> None:
-    """Generate functions to access the path of default subdirectories.
-    """
-
-    dir_types = [
+for dir_type in [
         ["data"],
         ["data", "raw"],
         ["data", "processed"],
@@ -47,10 +43,6 @@ def __generate_default_subdirs() -> None:
         ["reports"],
         ["reports", "figures"],
         ["src"]
-    ]
-
-    for dir_type in dir_types:
-        dir_var = '_'.join(dir_type) + "_dir"
-        exec(f"global {dir_var}; {dir_var} = make_dir_function({dir_type})")
-
-__generate_default_subdirs()
+    ]:
+    dir_var = '_'.join(dir_type) + "_dir"
+    exec(f"global {dir_var}; {dir_var} = make_dir_function({dir_type})")
