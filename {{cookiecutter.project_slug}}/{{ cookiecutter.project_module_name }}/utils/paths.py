@@ -4,7 +4,6 @@ from typing import (
     Union,
     Callable,
     Iterable,
-    Mapping
 )
 
 def make_dir_function(
