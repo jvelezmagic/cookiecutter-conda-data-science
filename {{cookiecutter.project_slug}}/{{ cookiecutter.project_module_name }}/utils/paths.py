@@ -18,6 +18,7 @@ def make_dir_function(
             If an iterable of strings is passed as an argument, then it is
             collapsed to a single steing with anchors dependent on the
             operating system.
+
     Returns:
         A function that returns the path relative to a directory that can
         receive `n` number of arguments for expansion.
@@ -47,4 +48,4 @@ for dir_type in [
         ["src"]
     ]:
     dir_var = '_'.join(dir_type) + "_dir"
-    exec(f"global {dir_var}; {dir_var} = make_dir_function({dir_type})")
+    exec(f"{dir_var} = make_dir_function({dir_type})")
