@@ -6,7 +6,7 @@ channels:
 dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - black
-  {% endif %}
+  {% endif -%}
   - invoke
   - jupyter
   - jupyterlab
@@ -20,14 +20,14 @@ dependencies:
   - pandas
   - pandas-flavor
   - pandas-profiling
-  {% endif %}
+  {% endif -%}
   - pip
   {% if cookiecutter.project_packages == "All" -%}
   - plotly
   - pyjanitor
   - pylint
   - pyspark
-  {% endif %}
+  {% endif -%}
   - python={{ cookiecutter.python_version }}
   {% if cookiecutter.project_packages == "All" -%}
   - python-dotenv
@@ -35,9 +35,9 @@ dependencies:
   - seaborn
   - statsmodels
   - tensorflow
-  {% endif %}
+  {% endif -%}
   - pip:
     {% if cookiecutter.project_packages == "All" -%}
     - h2o
-    {% endif %}
+    {% endif -%}
     - pyhere
