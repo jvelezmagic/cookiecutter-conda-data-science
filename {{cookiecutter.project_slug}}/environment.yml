@@ -18,9 +18,9 @@ dependencies:
   - pandas
   - pandas-flavor
   - pandas-profiling
-{% if cookiecutter.project_add_default_packages == "Yes" %}
-  - pip
 {% endif %}
+  - pip
+{% if cookiecutter.project_add_default_packages == "Yes" %}
   - plotly
   - pyjanitor
   - pylint
