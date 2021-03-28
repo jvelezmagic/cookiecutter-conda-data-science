@@ -11,6 +11,7 @@ def make_dir_function(
 ) -> Callable[..., PosixPath]:
     """Generate a fucntion that converts a string or iterable of strings into
     a path relative to the project directory.
+
     Args:
         dirname: Name of the subdirectories to extend the path of the main
             project.
@@ -23,12 +24,14 @@ def make_dir_function(
     """
 
     def dir_path(*args) -> PosixPath:
-        if type(dirname) == str:
+        if isinstance(dirname, str):
             return here(dirname, *args)
         else:
             return here(*dirname, *args)
 
     return dir_path
+
+project_dir = here
 
 for dir_type in [
         ["data"],
