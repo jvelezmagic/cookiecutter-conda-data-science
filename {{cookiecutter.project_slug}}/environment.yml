@@ -37,7 +37,7 @@ dependencies:
   - tensorflow
   {% endif %}
   - pip:
-  {% if cookiecutter.project_packages == "All" -%}
+    {% if cookiecutter.project_packages == "All" -%}
     - h2o
-  {% endif %}
+    {% endif %}
     - pyhere
