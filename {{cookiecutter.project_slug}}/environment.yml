@@ -4,7 +4,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  {% if cookiecutter.project_add_default_packages == "yes" %}
+{% if cookiecutter.project_add_default_packages == "yes" %}
   - black
   - invoke
   - jupyter
@@ -18,28 +18,28 @@ dependencies:
   - pandas
   - pandas-flavor
   - pandas-profiling
-  {% elif cookiecutter.project_add_default_packages == "no" %}
-  {% endif %}
+{% elif cookiecutter.project_add_default_packages == "no" %}
+{% endif %}
   - pip
-  {% if cookiecutter.project_add_default_packages == "yes" %}
+{% if cookiecutter.project_add_default_packages == "yes" %}
   - plotly
   - pyjanitor
   - pylint
   - pyspark
-  {% elif cookiecutter.project_add_default_packages == "no" %}
-  {% endif %}
+{% elif cookiecutter.project_add_default_packages == "no" %}
+{% endif %}
   - python={{ cookiecutter.python_version }}
-  {% if cookiecutter.project_add_default_packages == "yes" %}
+{% if cookiecutter.project_add_default_packages == "yes" %}
   - python-dotenv
   - scikit-learn
   - seaborn
   - statsmodels
   - tensorflow
-  {% elif cookiecutter.project_add_default_packages == "no" %}
-  {% endif %}
+{% elif cookiecutter.project_add_default_packages == "no" %}
+{% endif %}
   - pip:
-    {% if cookiecutter.project_add_default_packages == "yes" %}
+{% if cookiecutter.project_add_default_packages == "yes" %}
     - h2o
-    {% elif cookiecutter.project_add_default_packages == "no" %}
-    {% endif %}
+{% elif cookiecutter.project_add_default_packages == "no" %}
+{% endif %}
     - pyhere
