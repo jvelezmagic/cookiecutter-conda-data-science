@@ -6,9 +6,11 @@ channels:
 dependencies:
   {%- if cookiecutter.project_add_default_packages == "yes" -%}
   - black
+  {%- if cookiecutter.project_add_default_packages == "yes" -%}
   - invoke
   - jupyter
   - jupyterlab
+  {% endif %}
   - keras
   - lightgbm
   - matplotlib
