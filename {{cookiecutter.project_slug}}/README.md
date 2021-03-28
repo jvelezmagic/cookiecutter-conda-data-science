@@ -1,8 +1,8 @@
 # {{ cookiecutter.project_name }}
 
 {{ cookiecutter.project_description }}
-
-## Installation guide
+  
+## Installation guide
 
 Please read [install.md](install.md) for details on how to set up this project.
 

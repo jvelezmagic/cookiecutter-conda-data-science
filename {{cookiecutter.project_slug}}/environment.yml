@@ -4,6 +4,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+{% if cookiecutter.project_add_default_packages == "Yes"}
   - black
   - invoke
   - jupyter
@@ -22,12 +23,17 @@ dependencies:
   - pyjanitor
   - pylint
   - pyspark
+{% endif %}
   - python={{ cookiecutter.python_version }}
+{% if cookiecutter.project_add_default_packages == "Yes"}
   - python-dotenv
   - scikit-learn
   - seaborn
   - statsmodels
   - tensorflow
+{% endif %}
   - pip:
-      - h2o
-      - pyhere
+    {% if cookiecutter.project_add_default_packages == "Yes"}
+    - h2o
+    {% endif %}
+    - pyhere
