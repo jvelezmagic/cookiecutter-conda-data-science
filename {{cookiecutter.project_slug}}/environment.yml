@@ -4,7 +4,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-{% if cookiecutter.project_add_default_packages == "Yes" %}
+  {% if cookiecutter.project_add_default_packages == "Yes" %}
   - black
   - invoke
   - jupyter
@@ -18,24 +18,24 @@ dependencies:
   - pandas
   - pandas-flavor
   - pandas-profiling
-{% endif %}
+  {% endif %}
   - pip
-{% if cookiecutter.project_add_default_packages == "Yes" %}
+  {% if cookiecutter.project_add_default_packages == "yes" %}
   - plotly
   - pyjanitor
   - pylint
   - pyspark
-{% endif %}
+  {% endif %}
   - python={{ cookiecutter.python_version }}
-{% if cookiecutter.project_add_default_packages == "Yes" %}
+  {% if cookiecutter.project_add_default_packages == "yes" %}
   - python-dotenv
   - scikit-learn
   - seaborn
   - statsmodels
   - tensorflow
-{% endif %}
+  {% endif %}
   - pip:
-    {% if cookiecutter.project_add_default_packages == "Yes" %}
+    {% if cookiecutter.project_add_default_packages == "yes" %}
     - h2o
     {% endif %}
     - pyhere
