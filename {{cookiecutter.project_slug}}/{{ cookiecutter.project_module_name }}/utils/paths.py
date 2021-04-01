@@ -45,7 +45,7 @@ for dir_type in [
         ["references"],
         ["reports"],
         ["reports", "figures"],
-        ["src"]
+        ["{{ cookiecutter.project_module_name }}"]
     ]:
     dir_var = '_'.join(dir_type) + "_dir"
     exec(f"{dir_var} = make_dir_function({dir_type})")
