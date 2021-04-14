@@ -1,5 +1,5 @@
 from pyhere import here
-from pathlib import PosixPath
+from pathlib import Path
 from typing import (
     Union,
     Callable,
@@ -8,7 +8,7 @@ from typing import (
 
 def make_dir_function(
     dirname: Union[str, Iterable[str]]
-) -> Callable[..., PosixPath]:
+) -> Callable[..., Path]:
     """Generate a fucntion that converts a string or iterable of strings into
     a path relative to the project directory.
 
@@ -24,7 +24,7 @@ def make_dir_function(
         receive `n` number of arguments for expansion.
     """
 
-    def dir_path(*args) -> PosixPath:
+    def dir_path(*args) -> Path:
         if isinstance(dirname, str):
             return here(dirname, *args)
         else:
