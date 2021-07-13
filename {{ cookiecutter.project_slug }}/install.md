@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- [Anaconda](https://www.anaconda.com/download/) >=5.x
+- [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html)
 - Optional [Mamba](https://mamba.readthedocs.io/en/latest/)
 
 ## Create environment
