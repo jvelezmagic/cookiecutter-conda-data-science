@@ -1,4 +1,5 @@
-# conda env create -f environment.yml
+# conda env create --file environment.yml
+# mamba env create --file environment.yml
 name: cookiecutter-conda-data-science
 channels:
 - anaconda
