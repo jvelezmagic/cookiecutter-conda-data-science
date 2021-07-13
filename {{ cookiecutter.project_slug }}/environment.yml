@@ -19,8 +19,8 @@ dependencies:
   - matplotlib
   {% if cookiecutter.project_packages == "All" -%}
   - missingno
-  - nbdime
   {% endif -%}
+  - nbdime
   - numpy
   - pandas
   {% if cookiecutter.project_packages == "All" -%}
@@ -28,8 +28,8 @@ dependencies:
   - pandas-profiling
   {% endif -%}
   - pip
-  {% if cookiecutter.project_packages == "All" -%}
   - plotly
+  {% if cookiecutter.project_packages == "All" -%}
   - pyjanitor
   - pylint
   {% endif -%}
