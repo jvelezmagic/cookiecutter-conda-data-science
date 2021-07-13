@@ -4,7 +4,7 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 
 ## Requirements
 
-- [Anaconda](https://www.anaconda.com/download/) >=5.x
+- [Anaconda](https://www.anaconda.com/download/) >=4.x
 - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
 ``` bash
