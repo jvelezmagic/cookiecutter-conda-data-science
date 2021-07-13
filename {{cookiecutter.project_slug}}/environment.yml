@@ -13,11 +13,15 @@ dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - keras
   - lightgbm
+  {% endif -%}
   - matplotlib
+  {% if cookiecutter.project_packages == "All" -%}
   - missingno
   - nbdime
+  {% endif -%}
   - numpy
   - pandas
+  {% if cookiecutter.project_packages == "All" -%}
   - pandas-flavor
   - pandas-profiling
   {% endif -%}
@@ -26,18 +30,18 @@ dependencies:
   - plotly
   - pyjanitor
   - pylint
+  {% endif -%}
+  - pyprojroot
+  {% if cookiecutter.project_packages == "All" -%}
   - pyspark
   {% endif -%}
   - python={{ cookiecutter.python_version }}
   {% if cookiecutter.project_packages == "All" -%}
   - python-dotenv
   - scikit-learn
+  {% endif -%}
   - seaborn
+  {% if cookiecutter.project_packages == "All" -%}
   - statsmodels
   - tensorflow
   {% endif -%}
-  - pip:
-    {% if cookiecutter.project_packages == "All" -%}
-    - h2o
-    {% endif -%}
-    - pyhere

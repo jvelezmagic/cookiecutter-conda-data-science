@@ -1,4 +1,4 @@
-from pyhere import here
+from pyprojroot import here
 from pathlib import Path
 from typing import (
     Union,
@@ -7,7 +7,7 @@ from typing import (
 )
 
 def make_dir_function(
-    dirname: Union[str, Iterable[str]]
+    dir_name: Union[str, Iterable[str]]
 ) -> Callable[..., Path]:
     """Generate a fucntion that converts a string or iterable of strings into
     a path relative to the project directory.
@@ -25,14 +25,14 @@ def make_dir_function(
     """
 
     def dir_path(*args) -> Path:
-        if isinstance(dirname, str):
-            return here(dirname, *args)
+        if isinstance(dir_name, str):
+            return here().joinpath(dir_name, *args)
         else:
-            return here(*dirname, *args)
+            return here().joinpath(*dir_name, *args)
 
     return dir_path
 
-project_dir = here
+project_dir = make_dir_function("")
 
 for dir_type in [
         ["data"],
@@ -44,8 +44,7 @@ for dir_type in [
         ["notebooks"],
         ["references"],
         ["reports"],
-        ["reports", "figures"],
-        ["{{ cookiecutter.project_module_name }}"]
+        ["reports", "figures"]
     ]:
     dir_var = '_'.join(dir_type) + "_dir"
     exec(f"{dir_var} = make_dir_function({dir_type})")
