@@ -6,9 +6,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  {% if cookiecutter.project_packages == "All" -%}
   - black
-  {% endif -%}
   - invoke
   - jupyter
   - jupyterlab
@@ -29,8 +27,8 @@ dependencies:
   {% endif -%}
   - pip
   - plotly
-  {% if cookiecutter.project_packages == "All" -%}
   - pyjanitor
+  {% if cookiecutter.project_packages == "All" -%}
   - pylint
   {% endif -%}
   - pyprojroot
